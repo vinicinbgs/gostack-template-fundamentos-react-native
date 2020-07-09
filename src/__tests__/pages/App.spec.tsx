@@ -104,6 +104,8 @@ describe('Dashboard', () => {
       fireEvent.press(getByTestId('add-to-cart-1234'));
     });
 
+    console.log(products[0]);
+
     expect(addToCart).toHaveBeenCalledWith(products[0]);
   });
 });
